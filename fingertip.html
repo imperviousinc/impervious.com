@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Impervious | Fingertip</title>
+        <meta name="description" content="Impervious is a team of developers contributing open source core software for Handshake and Bitcoin." />
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png" />
+        <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png" />
+        <link rel="canonical" href="https://www.impervious.com" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/impervioustyle.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://use.typekit.net/ydg0vkm.css" />
+        <style>
+            li {
+                margin: 10px 0;
+            }
+
+            .download-btn {
+                color: #fff !important;
+                padding: 20px 25px 20px 25px;
+                text-align: center;
+                border-radius: 4px;
+                display: inline-block;
+            }
+            .download-btn:hover {
+                text-decoration: none;
+                opacity: 0.9;
+            }
+
+            .win {
+                background: #08508d;
+                margin-left: 2em;
+            }
+
+            .macos {
+                background: #8d0882;
+            }
+
+            .video {
+                width: 650px;
+                height: 366px;
+            }
+            @media screen and (max-width: 767px) {
+              .win{margin-top:30px;margin-left:0;}
+
+              .video {
+                width: 340px;
+                height: 191px;
+              }
+            }
+         
+        </style>
+    </head>
+    <body>
+        <!-- Hero -->
+        <div class="container">
+            <div class="hero">
+                <a href="https://impervious.com"><img src="images/logo.svg" class="logo" alt="Impervious" /></a>
+             
+                <h1>Fingertip</h1>
+                <div style="text-align: left; font-size: 18px;">
+                  
+                    <div style="text-align: center; margin-top: 2em;">
+                        <iframe class="video" src="https://www.youtube.com/embed/APKaRJyUnCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div style="margin: 2em 4em;">
+                        <h2>Features</h2>
+                        <ul style="margin-bottom: 4em;">
+                            <li>A lightweight decentralized Handshake resolver</li>
+                            <li>Zero trust TLS using DANE/TLSA without a centralized CA</li>
+                            <li>Access to external namespaces such as ENS</li>
+                        </ul>
+                        <div style="text-align: center; font-size: 14px;  max-width: 440px; margin: 0 auto;">
+                            <a href="https://github.com/imperviousinc/fingertip/releases/download/v0.0.1/Fingertip-v0.0.1.dmg" class="download-btn macos">Download for MacOS</a>
+                            <a href="https://github.com/imperviousinc/fingertip/releases/download/v0.0.1/Fingertip-v0.0.1.msi" class="download-btn win ">Download for Windows</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container text-center">
+                <div class="footer-logo">
+                    <img src="images/logo-footer.svg" />
+                </div>
+                <p>&copy; Copyright 2021 Impervious Inc.</p>
+            </div>
+        </footer>
+
+        <!--  javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

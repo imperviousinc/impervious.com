@@ -1,98 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Impervious | Fingertip</title>
-        <meta name="description" content="Impervious is a team of developers contributing open source core software for Handshake and Bitcoin." />
-        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png" />
-        <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png" />
-        <link rel="canonical" href="https://www.impervious.com" />
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/impervioustyle.css" rel="stylesheet" type="text/css" media="all" />
-        <link rel="stylesheet" href="https://use.typekit.net/ydg0vkm.css" />
-        <style>
-            li {
-                margin: 10px 0;
-            }
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Impervious | Fingertip</title>
+    <meta name="description" content="Fingertip is an open source resolver for truly decentralized names"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png"/>
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png"/>
+    <link rel="canonical" href="https://www.impervious.com"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/impervioustyle.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://use.typekit.net/ydg0vkm.css"/>
+    <style>
+        li {
+            margin: 10px 0;
+        }
 
-            .download-btn {
-                color: #fff !important;
-                padding: 20px 25px 20px 25px;
-                text-align: center;
-                border-radius: 4px;
-                display: inline-block;
-            }
-            .download-btn:hover {
-                text-decoration: none;
-                opacity: 0.9;
-            }
+        .download-btn {
+            text-align: center;
+            border-radius: 4px;
+            color: #444444 !important;
+            display: block;
+            padding: 2em 1em;
+            text-decoration: none !important;
+        }
 
-            .win {
-                background: #08508d;
-                margin-left: 2em;
-            }
+        .download-btn h3 {
+            margin-bottom: 0;
+        }
 
-            .macos {
-                background: #8d0882;
-            }
+        .download-btn:hover {
+            opacity: 0.9;
+            background: #f4f4f4 !important;
+        }
 
+        .download-logo {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .video {
+            width: 650px;
+            height: 366px;
+        }
+
+        @media screen and (max-width: 767px) {
             .video {
-                width: 650px;
-                height: 366px;
-            }
-            @media screen and (max-width: 767px) {
-              .win{margin-top:30px;margin-left:0;}
-
-              .video {
                 width: 340px;
                 height: 191px;
-              }
             }
-         
-        </style>
-    </head>
-    <body>
-        <!-- Hero -->
-        <div class="container">
-            <div class="hero">
-                <a href="https://impervious.com"><img src="images/logo.svg" class="logo" alt="Impervious" /></a>
-             
-                <h1>Fingertip</h1>
-                <div style="text-align: left; font-size: 18px;">
-                  
-                    <div style="text-align: center; margin-top: 2em;">
-                        <iframe class="video" src="https://www.youtube.com/embed/APKaRJyUnCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div style="margin: 2em 4em;">
-                        <h2>Features</h2>
-                        <ul style="margin-bottom: 4em;">
-                            <li>A lightweight decentralized Handshake resolver</li>
-                            <li>Zero trust TLS using DANE/TLSA without a centralized CA</li>
-                            <li>Access to external namespaces such as ENS</li>
-                        </ul>
-                        <div style="text-align: center; font-size: 14px;  max-width: 440px; margin: 0 auto;">
-                            <a href="https://github.com/imperviousinc/fingertip/releases/download/v0.0.1/Fingertip-v0.0.1.dmg" class="download-btn macos">Download for MacOS</a>
-                            <a href="https://github.com/imperviousinc/fingertip/releases/download/v0.0.1/Fingertip-v0.0.1.msi" class="download-btn win ">Download for Windows</a>
+        }
+    </style>
+</head>
+<body>
+<!-- Hero -->
+<div class="container">
+    <div class="hero">
+        <a href="https://impervious.com"><img src="images/logo.svg" class="logo" alt="Impervious"/></a>
+
+        <h1>Fingertip</h1>
+        <p>An <a style="text-decoration: none;" href="https://github.com/imperviousinc/fingertip">open source</a>
+            resolver for truly decentralized names.</p>
+        <div style="text-align: left; font-size: 18px;">
+            <div style="text-align: center; margin-top: 2em;">
+                <iframe
+                        class="video"
+                        src="https://www.youtube.com/embed/APKaRJyUnCQ"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                ></iframe>
+            </div>
+            <div style="max-width: 650px; margin: 0 auto;">
+                <h2 style="margin-top: 2em;">Features</h2>
+                <ul style="margin-bottom: 2em; text-align: left;">
+                    <li>A lightweight, decentralized Handshake resolver</li>
+                    <li>Zero-trust browser security using DANE/TLSA without any centralized certificate authorities</li>
+                    <li>Access to external namespaces such as <a href="https://ens.domains/">Ethereum Name Service</a></li>
+
+                </ul>
+
+                <h2>Downloads</h2>
+                <div class="col-md-12" style="margin-bottom: 4em;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a class="download-btn"
+                               href="https://github.com/imperviousinc/fingertip/releases/download/v0.0.2/Fingertip-v0.0.2.msi">
+                                <svg height="48" width="48" viewBox="0 0 88 88" class="download-logo">
+                                    <path d="m0,12.402,35.687-4.8602,0.0156,34.423-35.67,0.20313zm35.67,33.529,0.0277,34.453-35.67-4.9041-0.002-29.78zm4.3261-39.025,47.318-6.906,0,41.527-47.318,0.37565zm47.329,39.349-0.0111,41.34-47.318-6.6784-0.0663-34.739z"/>
+                                </svg>
+                                <h3>Windows</h3>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="download-btn"
+                               href="https://github.com/imperviousinc/fingertip/releases/download/v0.0.2/Fingertip-v0.0.2.dmg">
+                                <svg width="48" height="48" viewBox="0 0 842 1e3" class="download-logo">
+                                    <path d="M702 960c-54.2 52.6-114 44.4-171 19.6-60.6-25.3-116-26.9-180 0-79.7 34.4-122 24.4-170-19.6-271-279-231-704 77-720 74.7 4 127 41.3 171 44.4 65.4-13.3 128-51.4 198-46.4 84.1 6.8 147 40 189 99.7-173 104-132 332 26.9 396-31.8 83.5-72.6 166-141 227zM423 237C414.9 113 515.4 11 631 1c15.9 143-130 250-208 236z"/>
+                                </svg>
+                                <h3>MacOS</h3>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a class="download-btn"
+                               href="https://github.com/imperviousinc/fingertip/releases/download/v0.0.2/Fingertip-v0.0.2.AppImage">
+                                <svg width="48px" height="48px" viewBox="0 0 512 512" class="download-logo"
+                                     style="margin-top: 0.4em;">
+                                    <path d="M231.288,142.313c-4.52,0.482-2.96,4.64-5.476,4.73C223.334,147.134,223.839,141.749,231.288,142.313z M244.914,142.999  c4.399-1.13,4.422,3.299,6.824,2.493C254.073,144.709,251.701,139.865,244.914,142.999z M396.518,433.092  c-13.588,6.832-31.312,22.01-37.94,28.299c-4.873,4.663-25.293,6.976-36.637,1.138c-13.445-6.922-6.312-17.724-27.072-18.235  c-10.318-0.241-20.352-0.332-30.407-0.211c-8.896,0.12-17.784,0.392-26.853,0.866c-31.17,0.271-34.22,20.653-54.075,19.907  c-13.589-0.504-30.739-11.223-60.191-17.392c-20.698-4.309-40.569-5.333-44.825-14.492c-4.249-9.129,5.243-19.366,5.875-28.465  c0.775-11.863-8.986-27.997-1.771-34.249c5.958-5.176,19.012-1.379,27.426-6.079c8.948-4.964,12.541-9.099,12.541-19.998  c3.292,11.133-0.15,20.359-7.547,24.879c-4.399,2.659-12.579,4.067-19.305,3.382c-5.326-0.504-8.625,0.361-10.244,2.389  c-2.064,2.636-1.401,7.246,1.197,13.385c2.614,6.139,5.755,10.033,5.333,17.543c-0.422,7.517-8.685,16.442-7.366,22.762  c0.512,2.426,2.899,4.452,8.624,6.071c9.491,2.667,26.431,5.085,43.146,9.159c18.582,4.558,37.767,13.145,49.69,11.495  c35.651-4.964,15.321-43.198,9.552-52.29c-30.092-47.371-49.992-78.381-65.923-66.073c-4.158,3.201-4.316-8.06-4.135-12.398  c0.686-15.569,8.595-21.016,13.295-33.135c8.798-22.695,15.659-48.689,29.271-62.127c10.131-12.963,25.934-34.302,28.962-45.563  c-2.546-24.487-3.329-50.263-3.722-72.837c-0.384-24.013,3.42-45.081,30.537-59.814c6.613-3.593,15.207-4.911,24.314-5.001  c16.284-0.181,34.241,4.376,45.713,12.88c18.289,13.558,29.783,42.415,28.442,63.167c-1.085,15.976,1.793,32.72,6.915,49.932  c6.131,20.442,15.833,34.814,31.244,51.159c18.574,19.697,33.029,58.504,37.097,83.082c3.834,22.959-1.16,37.15-6.199,37.865  c-7.502,1.107-12.18,24.939-35.681,23.832c-14.997-0.723-16.466-9.581-20.623-17.128c-6.682-12.067-13.476-8.293-16.203,4.286  c-1.408,6.432-0.384,15.659,1.68,22.838c4.188,14.703,2.75,28.652,0.249,45.562c-4.798,32.457,22.68,38.596,41.217,23.17  c18.289-15.23,22.206-17.656,45.353-25.557c34.904-11.954,23.177-22.522,4.406-28.834c-16.827-5.657-17.52-34.092-11.494-39.455  c1.341,30.536,17.234,34.965,23.976,39.131C453.236,409.862,413.45,424.565,396.518,433.092z M318.792,343.646  c3.178-3.773,6.922-4.195,11.855-4.286c0.753-18.612,29.73-17.241,39.221-9.453c0-4.315-9.106-8.18-12.752-10.003  c6.319-21.015,3.352-29.459-0.836-49.307c-3.179-15.147-16.979-35.53-27.787-41.909c2.727,2.387,7.909,9.34,13.385,19.538  c9.431,17.558,18.74,43.507,12.541,65.298c-2.387,8.323-7.841,9.371-11.584,9.792c-16.617,1.732-6.848-19.637-13.747-49.073  c-7.683-32.721-15.562-35.176-17.542-37.744c-9.521-42.573-20.112-38.324-23.109-54.398c-2.689-14.222,12.397-25.986-8.113-29.964  c-6.252-1.228-15.199-7.57-18.77-8.022c-3.533-0.482-5.266-23.471,7.697-24.405c12.963-0.957,15.441,14.643,12.896,20.782  c-3.684,6.079,0.271,8.353,6.681,6.373c5.243-1.612,1.861-15.269,3.111-17.294c-3.382-19.554-11.547-22.371-20.051-24.013  c-32.276,2.478-17.784,38.227-21.053,34.784c-4.572-4.851-18.319-0.271-18.251-3.382c0.294-18.229-5.815-28.796-14.229-29.015  c-9.37-0.271-13.234,12.851-13.8,20.239c-0.535,7.096,4.219,21.882,7.69,20.752c2.275-0.753,6.169-5.325,2.004-5.303  c-2.154,0.03-5.408-5.024-5.747-11.171c-0.324-6.131,1.921-12.3,9.883-11.976c9.34,0.362,9.249,18.605,8.232,19.313  c-2.99,2.071-6.824,6.086-7.238,6.771c-2.968,4.972-8.926,6.199-11.11,8.384c-4.158,4.157-5.002,8.857-1.884,10.658  c10.682,6.131,7.209,12.955,22.153,13.588c9.814,0.385,17.204-1.529,23.885-3.57c5.205-1.574,21.919-5.137,25.444-11.275  c1.529-2.606,3.45-2.697,4.73-1.951c2.244,1.295,2.727,5.634-3.051,7.186c-8.263,2.245-16.609,6.651-23.923,9.581  c-7.299,2.96-9.634,4.098-16.519,5.363c-15.517,2.779-26.973-5.604-16.563,4.459c3.45,3.353,6.771,5.446,15.697,5.085  c19.547-0.776,41.45-24.247,43.612-13.739c0.452,2.154-6.191,5.084-11.373,7.66c-18.326,9.017-31.229,26.823-42.965,20.661  c-10.5-5.536-20.947-31.583-20.767-19.915c0.294,17.994-23.72,34.009-12.67,54.489c-7.155,1.95-23.471,36.373-25.813,54.3  c-1.28,10.153,0.973,22.906-1.461,30.032c-3.533,10.297-19.576-9.815-14.455-34.461c0.92-4.339,0.144-5.258-1.017-3.164  c-6.522,11.525-2.938,27.6,2.207,38.883c2.253,4.881,7.518,7.035,11.411,11.381c8.406,9.4,40.57,33.256,46.4,38.973  c7.064,6.944,5.084,22.875-9.936,24.397c7.698,14.522,15.2,15.9,15.087,39.643c8.708-4.678,5.205-14.907,1.56-21.648  c-2.546-4.609-5.875-6.703-5.152-7.78c0.543-0.813,5.024-4.67,7.721-1.65c7.932,8.889,22.906,10.479,39.01,8.475  c16.074-2.041,33.316-7.66,41.285-20.473c3.736-6.019,6.433-8.15,8.165-7.096c1.71,1.077,2.456,5.325,2.274,12.149  c-0.203,7.577-3.374,15.448-5.348,21.738c-2.223,7.126-2.907,12.18,4.037,12.451c2.064-13.175,5.688-26.138,6.734-39.243  C317.955,385.231,307.154,357.475,318.792,343.646z M220.269,131.957c-0.535,2.938-0.324,4.768,1.71,4.768  c0.331,0,0.685-0.068,0.813-0.813c0.979-5.838-2.041-10.086-3.27-10.425c-2.869-0.716-2.508,3.382-1.017,3.058  C219.409,128.363,220.63,129.862,220.269,131.957z M273.326,123.935c-2.938,0.271-2.094,1.732-0.633,2.154  c1.913,0.572,3.714,3.826,4.128,7.367c0.03,0.324,2.455-0.512,2.455-1.288C279.458,126.503,274.606,123.821,273.326,123.935z"/>
+                                </svg>
+                                <h3 style="margin-top: 0.5em;">Linux</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <footer>
-            <div class="container text-center">
-                <div class="footer-logo">
-                    <img src="images/logo-footer.svg" />
-                </div>
-                <p>&copy; Copyright 2021 Impervious Inc.</p>
-            </div>
-        </footer>
+<footer>
+    <div class="container text-center">
+        <div class="footer-logo">
+            <img src="images/logo-footer.svg"/>
+        </div>
+        <p>&copy; Copyright 2021 Impervious Inc.</p>
+    </div>
+</footer>
 
-        <!--  javascript -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+<!--  javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>

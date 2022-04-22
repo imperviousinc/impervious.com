@@ -30,13 +30,27 @@
             margin: 10px 0;
         }
 
-        .download-link {
+        .download-btn {
+            text-align: center;
+            border-radius: 4px;
             color: #444444 !important;
+            display: block;
+            padding: 2em 1em;
             text-decoration: none !important;
         }
 
-        .download-link:hover {
-            color: #cb089a !important;
+        .download-btn h3 {
+            margin-bottom: 0;
+        }
+
+        .download-btn:hover {
+            opacity: 0.9;
+            background: #f4f4f4 !important;
+        }
+
+        .download-logo {
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -44,37 +58,72 @@
 <!-- Hero -->
 <div class="container">
     <div class="hero">
-
         <img style="border-radius:30px;border:1px solid #d9d2d2;max-width: 150px;" src="images/beacon.png"/>
 
-        <h1>Beacon web browser</h1>
-        <p style="font-size:16px;text-align: left">Beacon is a privacy and security-focused browser with the goal of
-            replacing traditional certificate authorities with decentralized peer-to-peer naming systems, DNSSEC, and
-            DNS-Based Authentication of Named Entities (DANE)!</p>
+        <h1>Beacon browser beta</h1>
+        <p style="font-size:16px;text-align: center;max-width:600px;display:block;margin: 0 auto;">A first-class browsing experience for a decentralized internet built with web technologies and secured without third-parties.</p>
+        <br>
+        <img style="max-width: 100%;" src="images/beacon-screenshot.png">
+        <h2 style="text-align: left;">Downloads</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="download-btn"
+                       href="https://github.com/imperviousinc/beacon/releases/download/100.0.4896.75/Beacon-Windows-100.0.4896.75.zip">
+                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 6.76473L19.4656 4.11371L19.4741 22.8899L0.0177818 23.0007L0 6.76473ZM19.4564 25.0533L19.4715 43.8458L0.0151091 41.1709L0.0140182 24.9272L19.4564 25.0533ZM21.8161 3.76691L47.6259 0V22.6511L21.8161 22.856V3.76691ZM47.6319 25.23L47.6258 47.7791L21.816 44.1363L21.7798 25.1878L47.6319 25.23Z" fill="#5A5A5A"/>
+                        </svg>
 
+                        <h3>Windows</h3>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="download-btn"
+                       href="https://github.com/imperviousinc/beacon/releases/download/100.0.4896.75/Beacon-Intel-Mac-100.0.4896.75.dmg">
+                       <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.6881 46.032C31.0865 48.5568 28.2161 48.1632 25.4801 46.9728C22.5713 45.7584 19.9121 45.6816 16.8401 46.9728C13.0145 48.624 10.9841 48.144 8.68013 46.032C-4.32787 32.64 -2.40787 12.24 12.3761 11.472C15.9617 11.664 18.4721 13.4544 20.5841 13.6032C23.7233 12.9648 26.7281 11.136 30.0881 11.376C34.1249 11.7024 37.1441 13.296 39.1601 16.1616C30.8561 21.1536 32.8241 32.0976 40.4513 35.1696C38.9249 39.1776 36.9665 43.1376 33.6833 46.0656L33.6881 46.032ZM20.2961 11.328C19.9073 5.376 24.7313 0.48 30.2801 0C31.0433 6.864 24.0401 12 20.2961 11.328Z" fill="#5A5A5A"/>
+                        <rect x="17" y="31" width="33" height="13" rx="4" fill="#2A7AF2"/>
+                        <path d="M24.1697 33.7273V41H22.6321V33.7273H24.1697ZM26.9192 37.8466V41H25.4064V35.5455H26.8482V36.5078H26.9121C27.0328 36.1906 27.2353 35.9396 27.5194 35.755C27.8034 35.5679 28.1479 35.4744 28.5527 35.4744C28.9315 35.4744 29.2618 35.5573 29.5435 35.723C29.8252 35.8887 30.0442 36.1255 30.2005 36.4332C30.3567 36.7386 30.4348 37.1032 30.4348 37.527V41H28.9221V37.7969C28.9244 37.4631 28.8392 37.2027 28.6664 37.0156C28.4935 36.8262 28.2556 36.7315 27.9526 36.7315C27.749 36.7315 27.5691 36.7753 27.4128 36.8629C27.2589 36.9505 27.1382 37.0784 27.0506 37.2464C26.9654 37.4122 26.9216 37.6122 26.9192 37.8466ZM34.5284 35.5455V36.6818H31.2436V35.5455H34.5284ZM31.9893 34.2386H33.5021V39.3239C33.5021 39.4635 33.5234 39.5724 33.5661 39.6506C33.6087 39.7263 33.6679 39.7796 33.7436 39.8104C33.8217 39.8411 33.9117 39.8565 34.0135 39.8565C34.0845 39.8565 34.1555 39.8506 34.2266 39.8388C34.2976 39.8246 34.352 39.8139 34.3899 39.8068L34.6278 40.9325C34.5521 40.9562 34.4455 40.9834 34.3082 41.0142C34.1709 41.0473 34.004 41.0675 33.8075 41.0746C33.4429 41.0888 33.1233 41.0402 32.8487 40.929C32.5765 40.8177 32.3646 40.6449 32.2131 40.4105C32.0616 40.1761 31.987 39.8802 31.9893 39.5227V34.2386ZM37.9411 41.1065C37.38 41.1065 36.897 40.9929 36.4922 40.7656C36.0897 40.536 35.7796 40.2116 35.5618 39.7926C35.344 39.3712 35.2351 38.8729 35.2351 38.2976C35.2351 37.7365 35.344 37.2441 35.5618 36.8203C35.7796 36.3965 36.0862 36.0663 36.4815 35.8295C36.8793 35.5928 37.3456 35.4744 37.8807 35.4744C38.2405 35.4744 38.5755 35.5324 38.8857 35.6484C39.1982 35.7621 39.4704 35.9337 39.7024 36.1634C39.9368 36.393 40.1191 36.6818 40.2493 37.0298C40.3795 37.3755 40.4446 37.7803 40.4446 38.2443V38.6598H35.8388V37.7223H39.0206C39.0206 37.5045 38.9732 37.3116 38.8786 37.1435C38.7839 36.9754 38.6525 36.844 38.4844 36.7493C38.3187 36.6522 38.1257 36.6037 37.9055 36.6037C37.6759 36.6037 37.4723 36.657 37.2947 36.7635C37.1196 36.8677 36.9822 37.0085 36.8828 37.1861C36.7834 37.3613 36.7325 37.5566 36.7301 37.772V38.6634C36.7301 38.9332 36.7798 39.1664 36.8793 39.3629C36.9811 39.5594 37.1243 39.7109 37.3089 39.8175C37.4936 39.924 37.7126 39.9773 37.9659 39.9773C38.134 39.9773 38.2879 39.9536 38.4276 39.9062C38.5672 39.8589 38.6868 39.7879 38.7862 39.6932C38.8857 39.5985 38.9614 39.4825 39.0135 39.3452L40.4126 39.4375C40.3416 39.7737 40.196 40.0672 39.9759 40.3182C39.758 40.5668 39.4763 40.7609 39.1307 40.9006C38.7874 41.0379 38.3909 41.1065 37.9411 41.1065ZM42.9446 33.7273V41H41.4318V33.7273H42.9446Z" fill="#FAF1F1"/>
+                        </svg>
+
+                        <h3>Intel Mac</h3>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="download-btn"
+                       href="https://github.com/imperviousinc/beacon/releases/download/100.0.4896.75/Beacon-M1-Mac-100.0.4896.75.dmg">
+                       <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.6881 46.032C31.0865 48.5568 28.2161 48.1632 25.4801 46.9728C22.5713 45.7584 19.9121 45.6816 16.8401 46.9728C13.0145 48.624 10.9841 48.144 8.68013 46.032C-4.32787 32.64 -2.40787 12.24 12.3761 11.472C15.9617 11.664 18.4721 13.4544 20.5841 13.6032C23.7233 12.9648 26.7281 11.136 30.0881 11.376C34.1249 11.7024 37.1441 13.296 39.1601 16.1616C30.8561 21.1536 32.8241 32.0976 40.4513 35.1696C38.9249 39.1776 36.9665 43.1376 33.6833 46.0656L33.6881 46.032ZM20.2961 11.328C19.9073 5.376 24.7313 0.48 30.2801 0C31.0433 6.864 24.0401 12 20.2961 11.328Z" fill="#5A5A5A"/>
+                        <rect x="17" y="31" width="33" height="13" rx="4" fill="#27292B"/>
+                        <path d="M26.6321 33.7273H28.5284L30.5312 38.6136H30.6165L32.6193 33.7273H34.5156V41H33.0241V36.2663H32.9638L31.0817 40.9645H30.0661L28.1839 36.2486H28.1236V41H26.6321V33.7273ZM38.9039 33.7273V41H37.3663V35.1868H37.3237L35.6582 36.2308V34.8672L37.4586 33.7273H38.9039Z" fill="#FAF1F1"/>
+                        </svg>
+
+                        <h3>M1 Mac</h3>
+                    </a>
+                </div>
+            </div>
+            <div style="text-align: left;margin-top:1em;">
+                <p style="font-size:24px;text-align:left;">iOS</p>
+                <br>
+                <a  style="margin-left:2em;" class="download-link"
+                   href="https://apps.apple.com/us/app/beacon-web-browser/id1599119646">
+                    <img style="width:150px;" src="images/download-app-store.svg">
+                </a>
+            </div>
 
         <div style="text-align: left; font-size: 18px;">
-
             <div style="max-width: 650px; ">
-                <br>
-                <ul style="margin-bottom: 2em; text-align: left;">
+                <br><br>
+                <h2>About Beacon</h2>
+                <ul style="margin-bottom: 2em;margin-top:1em; text-align: left;">
                     <li>Decentralized p2p <a href="https://handshake.org">Handshake</a> light client that syncs block
                         headers in a few seconds!
                     </li>
                     <li>Zero-trust HTTPS/TLS using DANE/TLSA without centralized certificate authorities</li>
                     <li>Access names on Ethereum such as <a href="https://foreverdomains.io">Forever domains</a> and <a
                             href="https://ens.domains">ENS</a></li>
-                    <li> Beacon is <a href="https://github.com/imperviousinc/beacon-ios">open source</a></li>
-
+                    <li> Beacon is <a href="https://github.com/imperviousinc/beacon">open source</a></li>
                 </ul>
-
-                <div class="col-md-12" style="margin-bottom: 4em;margin-top:2em;text-align: center">
-                    <a class="download-link"
-                       href="https://apps.apple.com/us/app/beacon-web-browser/id1599119646">
-                        <img style="width:200px;" src="images/download-app-store.svg">
-                    </a>
-                </div>
-
             </div>
         </div>
     </div>
